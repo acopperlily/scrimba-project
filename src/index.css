@@ -1,9 +1,10 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +16,7 @@ code {
 }
 
 #navbar {
-  height: 91px;
+  height: 100px;
   background-color: #21222A;
   display: flex;
   justify-content: space-between;
@@ -38,7 +39,7 @@ code {
   font-size: 31px;
   padding-left: 8px;
   font-weight: 700;
-  letter-spacing: -5%;
+  letter-spacing: -0.05em;
 }
 
 #extra-title {
@@ -46,4 +47,37 @@ code {
   padding-right: 27px;
   font-weight: 600;
   font-size: 16px;
+}
+
+.fun-facts {
+  background: #282D35;
+  background-image: url('./images/react-icon-large.png');
+  background-repeat: no-repeat;
+  background-position: right 25%;
+  min-height: 90vh;
+  color: white;
+}
+
+.facts-title {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.05em;
+  padding: 57px 0 46px 27px;
+}
+
+.facts-list {
+  margin-left: 74px;
+  max-width: 400px;
+}
+
+.facts-list li {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
 }
